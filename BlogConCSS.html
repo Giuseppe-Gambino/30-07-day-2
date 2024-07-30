@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -12,14 +13,14 @@
   </head>
   <body>
     <header>
-      <img src="assets/img/logo.svg" alt="logo epicode" />
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Articoli</a>
-        <a href="#">Lavora con noi</a>
-        <a href="BlogConCSS.html" target="_blank">Guarda la versione con CSS!</a>
+      <img src="https://epicode.com/wp-content/uploads/2022/05/footer-logo.svg" alt="logo epicode" id="Logo" />
+      <nav id="nav">
+        <a class="linkNav" href="#">Home</a>
+        <a class="linkNav" href="#">Articoli</a>
+        <a class="linkNav" href="#">Lavora con noi</a>
       </nav>
     </header>
+    <hr />
     <main>
       <h1>Epicode - II blog dei developers</h1>
       <!--Contenuto Post-->
@@ -48,36 +49,38 @@
       <section>
         <h3>Diffusione dei CSS</h3>
         <table>
-          <tr>
-            <th>Anno</th>
-            <th>% di utilizzo</th>
-            <th>Supporto browser</th>
-          </tr>
-          <tr>
-            <td>2000</td>
-            <td>20%</td>
-            <td>17%</td>
-          </tr>
-          <tr>
-            <td>2002</td>
-            <td>35%</td>
-            <td>22%</td>
-          </tr>
-          <tr>
-            <td>2004</td>
-            <td>45%</td>
-            <td>42%</td>
-          </tr>
-          <tr>
-            <td>2008</td>
-            <td>80%</td>
-            <td>51%</td>
-          </tr>
-          <tr>
-            <td>2012</td>
-            <td>100%</td>
-            <td>76%</td>
-          </tr>
+          <tbody>
+            <tr>
+              <th>Anno</th>
+              <th>% di utilizzo</th>
+              <th>Supporto browser</th>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>20%</td>
+              <td>17%</td>
+            </tr>
+            <tr>
+              <td>2002</td>
+              <td>35%</td>
+              <td>22%</td>
+            </tr>
+            <tr>
+              <td>2004</td>
+              <td>45%</td>
+              <td>42%</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td>80%</td>
+              <td>51%</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>100%</td>
+              <td>76%</td>
+            </tr>
+          </tbody>
         </table>
         <!--Info-->
         <p>
@@ -86,8 +89,8 @@
         </p>
         <!--Video iframe YT-->
         <iframe
-          width="560"
-          height="315"
+          width="70%"
+          height="415"
           src="https://www.youtube.com/embed/aBSZVeBRvDY?si=oFI5HuiLPeamoDE6"
           title="YouTube video player"
           frameborder="0"
@@ -97,24 +100,30 @@
         ></iframe>
       </section>
     </main>
-    <footer>
-      <!--Form email-->
+    <!--Form email-->
+    <div id="email">
       <h3>Vuoi rimanere aggiornato su altre novitå del blog? Iscriviti alla nostra newsletter:</h3>
       <form>
         <label for="areaemail">E-Mail</label>
         <input type="email" id="areaemail" placeholder="es.email@gmail.com" />
         <input type="submit" />
       </form>
+    </div>
+    <footer>
       <!--correlati-->
-      <p>Articoli correlati Validare il codice HTML Categoria: develop Data: 18-9-2020</p>
-      <p>Correggere la sintassi Categoria: develop Data: 16-9-2020</p>
-      <p>Meno Kb nella pagina Categoria: ottimizzazione Data: 30-9-2020</p>
+      <div id="correlati">
+        <p>Articoli correlati Validare il codice HTML Categoria: develop Data: 18-9-2020</p>
+        <p>Correggere la sintassi Categoria: develop Data: 16-9-2020</p>
+        <p>Meno Kb nella pagina Categoria: ottimizzazione Data: 30-9-2020</p>
+      </div>
       <!--Copyright e info-->
-      <p>Blog Epicode 02023</p>
-      <p>
-        Testata online di Mario Rossi, registrata con prot- n-213/2018 - via Luigi Einaudi 2 - Milano. p.lVA 00112233.
-        <a href="mailto:info@epicode.school">info@epicode.school</a>
-      </p>
+      <div id="Copy">
+        <p>Blog Epicode 02023</p>
+        <p>
+          Testata online di Mario Rossi, registrata con prot- n-213/2018 - via Luigi Einaudi 2 - Milano. p.lVA 00112233.
+          <a href="mailto:info@epicode.school">info@epicode.school</a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
